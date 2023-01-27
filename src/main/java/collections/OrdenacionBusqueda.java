@@ -31,7 +31,7 @@ public class OrdenacionBusqueda {
         //La lista donde buscar la informacion deve estar ordenada previamente
         //segun el criterio de orden natural (nombre) --> Comparable en Pais
         Collections.sort(paises);
-        System.out.println("---------------------busqueda binaria--------------");
+        System.out.println("---------------------busqueda binaria-----------------");
         System.out.println("lista ordenada sefun orden natural(nombre)-----------");
         paises.forEach(System.out::println);
         Pais objetoBuscar = new Pais();

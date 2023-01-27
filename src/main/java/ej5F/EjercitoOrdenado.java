@@ -2,28 +2,28 @@ package ej5F;
 
 import java.util.*;
 
-public class Ejercito {
+public class EjercitoOrdenado {
 
-    private HashSet<Soldado> ejercito;
+    TreeSet<Soldado> ejercitoOrdenado;
 
-    public Ejercito() {
-        this.ejercito = new HashSet<Soldado>();
+    public EjercitoOrdenado() {
+        this.ejercitoOrdenado = new TreeSet<>();
     }
 
     public int numSoldados() {
-        return ejercito.size();
+        return ejercitoOrdenado.size();
     }
 
     public void anadirSoldado(Soldado tmp) {
-        ejercito.add(tmp);
+        ejercitoOrdenado.add(tmp);
     }
 
     public boolean siHayAlquein() {
-        return ejercito.isEmpty();
+        return ejercitoOrdenado.isEmpty();
     }
 
     public boolean siHaySoldado(Soldado tmp) {
-        if (ejercito.contains(tmp)) {
+        if (ejercitoOrdenado.contains(tmp)) {
             return true;
         } else {
             System.out.println("Si hay este soldado");
@@ -32,11 +32,10 @@ public class Ejercito {
     }
 
     public void dematriculacionSoldado(Soldado tmp) {
-        ejercito.remove(tmp);
+        ejercitoOrdenado.remove(tmp);
     }
 
-    public HashSet<Soldado> getEjercito() {
-        return ejercito;
+    public TreeSet<Soldado> getEjercito() {
+        return ejercitoOrdenado;
     }
-
 }

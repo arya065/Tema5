@@ -2,7 +2,8 @@ package ej5F;
 
 import java.util.*;
 
-public class Soldado implements Comparable<Soldado>{
+public class Soldado implements Comparable<Soldado> {
+
     private String nif;
     private String nombre;
     private String apellido1;
