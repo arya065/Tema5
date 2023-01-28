@@ -6,13 +6,14 @@ public class MainOrdenado {
     
     public static void main(String[] args) {
         EjercitoOrdenado ejercitoOrdenado = new EjercitoOrdenado();
-        Soldado sol1 = new Soldado("A1", "sol1", "sol1", "sol1", 10);
+        Soldado sol1 = new Soldado("2", "sol1", "sol1", "sol1", 10);
         Soldado sol2 = new Soldado("1", "sol2", "sol2", "sol2", 11);
-//        Comparator<Soldado> comparatorName = (p1, p2) -> p1.getNif().compareToIgnoreCase(p2.getNif());
+        Soldado sol3 = new Soldado("3", "sol3", "sol3", "sol3", 15);
+
         
         ejercitoOrdenado.anadirSoldado(sol1);
         ejercitoOrdenado.anadirSoldado(sol2);
-        ejercitoOrdenado.anadirSoldado(sol2);
+        ejercitoOrdenado.anadirSoldado(sol3);
         
         imprimir(ejercitoOrdenado.getEjercito());
         
