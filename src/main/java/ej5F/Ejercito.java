@@ -39,4 +39,13 @@ public class Ejercito {
         return ejercito;
     }
 
+    public void mostrarEjercito() {
+        Iterator<Soldado> iterator1= ejercito.iterator();
+        Soldado tmp = new Soldado("6", "6","6", "6", 0);
+        while(iterator1.hasNext()){
+            tmp = iterator1.next();
+            System.out.println(tmp);
+        }
+    }
+
 }
