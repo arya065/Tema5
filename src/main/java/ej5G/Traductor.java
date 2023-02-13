@@ -18,15 +18,13 @@ public class Traductor {
         traductor.put(palabraIngles, palabraEspanol);
     }
 
-    public String leer(int i) {
+    public String leer(int i) {//Scanner
         Scanner in = new Scanner(System.in);
         if (i == 1) {// leer string
             String volver = in.nextLine();
-//            in.next();
             return volver;
         } else {// leer int
             String volver = "" + in.nextInt();
-//            in.next();
             return volver;
         }
 
@@ -98,19 +96,20 @@ public class Traductor {
 
     public static void main(String[] args) {
         Traductor test = new Traductor();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 3; i++) {//crear 10 palabras
             test.addWord();
         }
-        System.out.println(test.toString());
-
-        System.out.println(test.makeTranslation("apple"));
-
+        System.out.println(test.toString());//mostrar lista que tenemos
+        System.out.println("-----------------------------------------");
+        System.out.println(test.makeTranslation("apple"));//traducir palabra
+        System.out.println("-----------------------------------------");
         test.eleminar();
-        System.out.println(test.toString());
-
+        System.out.println(test.toString());//mostrar lista sin elemento que eleminamos
+        System.out.println("-----------------------------------------");
         test.cambiar();
-        System.out.println(test.toString());
-        System.out.println(test.getListSpanish());
-        System.out.println(test.getListEnglish());
+        System.out.println(test.toString());//mostrar lista con cambios
+        System.out.println("-----------------------------------------");
+        System.out.println(test.getListSpanish());//lista palabras espanol
+        System.out.println(test.getListEnglish());//lista palabras ingles
     }
 }

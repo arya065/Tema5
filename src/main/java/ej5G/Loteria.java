@@ -32,7 +32,7 @@ public class Loteria {
         }
     }
 
-    public int winOrLose(String key) {
+    public int winOrLose(String key) {//sabes si has ganado
         try {
             int result = loteria.get(key);
             if (result != 0) {
